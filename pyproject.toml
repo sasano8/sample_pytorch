@@ -9,6 +9,9 @@ dependencies = [
 ]
 
 
+[tool.ruff.analyze]
+exclude = ["cache"]
+
 [tool.ruff]
 target-version = "py38"
 line-length = 88
@@ -18,11 +21,13 @@ indent-width = 4
 [tool.ruff.lint]
 
 
+
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = true
-line-ending = "auto"
+line-ending = "lf"
 docstring-code-format = true
 docstring-code-line-length = "dynamic"
 
