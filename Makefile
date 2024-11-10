@@ -2,5 +2,5 @@ hello:
 	@docker compose run hello
 
 format:
-	@uvx ruff@latest format .
+	@uvx ruff@0.7.3 format .
 
